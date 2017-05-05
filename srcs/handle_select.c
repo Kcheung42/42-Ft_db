@@ -6,7 +6,7 @@
 /*   By: kcheung <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/03 14:46:14 by kcheung           #+#    #+#             */
-/*   Updated: 2017/05/04 22:31:59 by kcheung          ###   ########.fr       */
+/*   Updated: 2017/05/04 23:06:51 by kcheung          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -293,9 +293,9 @@ int		handle_constraint(char *op, t_col *col, char *input, char *value)
 	else
 	{
 		if (!ft_strcmp("=", op))
-			ret = (!db_strcmp(input, value)) ? 1 : 0;
+			ret = (!ft_strcmp(input, value)) ? 1 : 0;
 		else if (!ft_strcmp("<>", op))
-			ret = (db_strcmp(input, value)) ? 1 : 0;
+			ret = (ft_strcmp(input, value)) ? 1 : 0;
 		else if (!ft_strcmp(">", op))
 			ret = (db_strcmp(input, value) > 0) ? 1 : 0;
 		else if (!ft_strcmp(">=", op))

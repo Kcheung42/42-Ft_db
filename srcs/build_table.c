@@ -6,7 +6,7 @@
 /*   By: kcheung <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/03 14:49:22 by kcheung           #+#    #+#             */
-/*   Updated: 2017/05/04 22:12:56 by kcheung          ###   ########.fr       */
+/*   Updated: 2017/05/04 23:08:40 by kcheung          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,7 +126,7 @@ t_table	*build_table(int fd)
 		}
 		iter_h = table->header;
 		array = lsh_split_line(line, ",");
-		if (ft_atoi(*array))
+		if (*array && ft_atoi(*array))
 		{
 			table->next_key = ft_atoi(*array) + 1;
 			while (*array)
