@@ -1,0 +1,9 @@
+*,key|int,course_name|int
+**,2
+2,physics
+3,Neural_Networks
+4,Biology
+,абы
+12,crime
+123,basic
+1,42
