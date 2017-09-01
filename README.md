@@ -27,3 +27,10 @@ Updating:
 update (filename) set (col_name)=[changed value] WHERE (col_name)=[current value]
 
 i.e. update roster.db set fname=Bob WHERE fname=Elvis
+
+# Author
+Kenneth Cheung
+
+# Acknowledgment
+This project was completed at School 42 in Fremont, California
+https://www.42.us.org/
